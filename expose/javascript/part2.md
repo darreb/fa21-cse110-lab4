@@ -1,1 +1,17 @@
+1. "3". the length of prices is 3, so i will stop the for loop when i = 3. Additionally, i is a var variable, and var variables have no block scope, so it will successfully print the value of i even after the for loop is done.
+2. "150". var can be redeclared, so there is no error with the multiple iterations. vars have no block scope, so it lasts beyond the for loop block. Additionally, since 300 is the last price and 0.5 is the discount, discountPrice will be the last discounted price, which is 300 * (1 - 0.5) = 150.
+3. "5000". discounted.push(finalPrice) will push in the old value of finalPrice and return the size of the new array. Thus, finalPrice represents the current 100(discountedPrice)/(discounted.length). At the third iteration, finalPrice = 150 * 100/ 3, since the finalPrice gets pushed in a third time. The console.log will print the value of finalPrice after the third iteration.
+4. "0, 5000, 5000". discounted.push(finalPrice) will push in the old value of finalPrice and return the size of the new array. Thus, the first element of discounted will always be 0. Then, the first reassignment of finalPrice is after the first discountedPrice which is 50 * 100/1 = 5000. In the second iteration, 5000 is the old value of finalPrice(from the fiirst iteration), and will get pushed in, then finalPrice gets reassigned to 5000 once again. In the final iteration, 5000(from iteration 2) gets pushed in, and finalPrice gets reassigned for a third time, but never gets pushed in. Thus, it will return "0, 5000, 5000".
+5. "ReferenceError: i is not defined". Since i is a let variable, it gets terminated after the for loop block, since let variables have block scope.
+6. "ReferenceError: discountedPrice is not defined". Since discountedPrice is a let variable, it gets terminated after the for loop block, since let variables have block scope.
+7. "5000". The algorithm is the same from the var section, so the algorithm explanation is the same. Additionally, since the let was declared outside the for loop block, it persists until the end of the function.
+8. "0, 5000, 5000". The algorithm is the same from the var section, so the algorithm explanation is the same. Additionally, since the let was declared outside the for loop block, it persists until the array gets returned.
+9. "ReferenceError: i is not defined". Since i is a let variable, it gets terminated after the for loop block, since let variables have block scope.
+10. "3". The length of prices is 3. Additionally, since length never gets reassigned past its initial declaration, there is no error.
+11. "50, 100, 150". It pushes the discountedPrice at each iteration. Additionally, there is no error, since there was no reassignment to discounted, it was only pushed to.
+12. a. student.name
+    b. student['Grad Year']
+    c. student.greeting()
+    d. student['Favorite Teacher'].name
+    e. student.courseLoad[0]
 
