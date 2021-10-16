@@ -9,9 +9,15 @@
 9. "ReferenceError: i is not defined". Since i is a let variable, it gets terminated after the for loop block, since let variables have block scope.
 10. "3". The length of prices is 3. Additionally, since length never gets reassigned past its initial declaration, there is no error.
 11. "50, 100, 150". It pushes the discountedPrice at each iteration. Additionally, there is no error, since there was no reassignment to discounted, it was only pushed to.
-12. a. student.name
-    b. student['Grad Year']
-    c. student.greeting()
-    d. student['Favorite Teacher'].name
+12. a. student.name<br />
+    b. student['Grad Year']<br />
+    c. student.greeting()<br />
+    d. student['Favorite Teacher'].name<br />
     e. student.courseLoad[0]
+13. a. 32. 2 gets mapped to '2', and '2' is appended to '3'.
+    b. SyntaxError: Invalid or unexpected token. You cannot subtract with a string
+    c. 3. null is mapped to 0
+    d. 3null. null gets mapped to 'null', and 'null' is appended to '3'.
+    e. 4. true gets mapped to 0 and added to 3
+    f. 
 
