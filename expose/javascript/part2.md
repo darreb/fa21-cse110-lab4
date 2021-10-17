@@ -30,7 +30,7 @@
     f. true, Boolean(2) returns true with input 2, and true === true.<br />
 15. The difference between == and === is that == will try to convert one of the arguments to an appropriate type in order to compare both values as if they're the same type, but === will do no such conversion and will just compare the two values as different types.
 17. [ 2, 4, 6 ]. We pass in the array and doSomething function into modifyArray. In modifyArray, we have a newArr that we push our result into. The result that we'll push will be based on our callback function. In this case, our callback function is doSomething, which multiplies the argument by 2 and returns it. This matches our result, as the elements of our array are now multiplied by 2.
-18. 1
+19. 1
     4
     3
     2 
