@@ -24,7 +24,13 @@
     h. NaN. '-' is a number only operation, so '3' gets mapped down to 3, and undefined is mapped to NaN. Any operation done between a number and NaN is NaN.<br />
 14. a. true, '2' becomes 2 and gets compared to 1<br />
     b. false, Both values are compared lexicographically. It will compare the first character of both strings to see which is greater. '2' > '1', so it returns false <br />
-    c. true, '2' gets converted to a 2 and gets compared to 2
-    d. false, '2' does not get converted and gets compared to 2
-    e. false, true is mapped to 1 when converted to an integer, then it gets compared to 2
-    f. true
+    c. true, '2' gets converted to a 2 and gets compared to 2<br />
+    d. false, '2' does not get converted and gets compared to 2<br />
+    e. false, true is mapped to 1 when converted to an integer, then it gets compared to 2<br />
+    f. true, Boolean(2) returns true with input 2, and true === true.<br />
+15. The difference between == and === is that == will try to convert one of the arguments to an appropriate type in order to compare both values as if they're the same type, but === will do no such conversion and will just compare the two values as different types.
+17. [ 2, 4, 6 ]. We pass in the array and doSomething function into modifyArray. In modifyArray, we have a newArr that we push our result into. The result that we'll push will be based on our callback function. In this case, our callback function is doSomething, which multiplies the argument by 2 and returns it. This matches our result, as the elements of our array are now multiplied by 2.
+18. 1
+    4
+    3
+    2 
