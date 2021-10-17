@@ -14,10 +14,17 @@
     c. student.greeting()<br />
     d. student['Favorite Teacher'].name<br />
     e. student.courseLoad[0]
-13. a. 32. 2 gets mapped to '2', and '2' is appended to '3'.
-    b. SyntaxError: Invalid or unexpected token. You cannot subtract with a string
-    c. 3. null is mapped to 0
-    d. 3null. null gets mapped to 'null', and 'null' is appended to '3'.
-    e. 4. true gets mapped to 0 and added to 3
-    f. 
-
+13. a. 32. 2 gets mapped to '2', and '2' is appended to '3'.<br />
+    b. 1. '-' is a number only operation, so '3' gets mapped down to 3, and 2 gets subtracted from 3<br />
+    c. 3. null is mapped to 0<br />
+    d. 3null. null gets mapped to 'null', and 'null' is appended to '3'.<br />
+    e. 4. true gets mapped to 1 and added to 3<br />
+    f. 0. false and null both get mapped to 0 and are added together. <br />
+    g. 3undefined. undefined gets mapped to "undefined" and gets appended to 3.<br />
+    h. NaN. '-' is a number only operation, so '3' gets mapped down to 3, and undefined is mapped to NaN. Any operation done between a number and NaN is NaN.<br />
+14. a. true, '2' becomes 2 and gets compared to 1<br />
+    b. false, Both values are compared lexicographically. It will compare the first character of both strings to see which is greater. '2' > '1', so it returns false <br />
+    c. true, '2' gets converted to a 2 and gets compared to 2
+    d. false, '2' does not get converted and gets compared to 2
+    e. false, true is mapped to 1 when converted to an integer, then it gets compared to 2
+    f. true
